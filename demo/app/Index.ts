@@ -33,8 +33,8 @@ class Index {
             handler: (req, reply) => {
                 return reply(this._productController.create());
             },
-            method: 'GET',
-            path: '/products1'
+            method: 'POST',
+            path: '/products'
 
         };
         return [listRoute, createRoute];
